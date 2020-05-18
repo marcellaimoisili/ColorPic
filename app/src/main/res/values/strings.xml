@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ColorPic</string>
+    <string name="red">Red: 0</string>
+    <string name="green">Green: 0</string>
+    <string name="blue">Blue: 0</string>
+    <string name="hue">Hue: 0</string>
+    <string name="sat">Sat: 0</string>
+    <string name="value">Value: 0</string>
+    <string name="hex">#B10032</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="rgb">SWAP TO RGB</string>
+    <string name="hsv">SWAP TO HSV</string>
+    <string name="loc">LOCATION COLOR</string>
+    <string name="search">SEARCH</string>
+    <string name="share">SHARE</string>
+    <string name="pick">PICK NEW COLOR</string>
+</resources>
