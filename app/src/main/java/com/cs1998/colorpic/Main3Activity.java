@@ -54,7 +54,7 @@ public class Main3Activity extends AppCompatActivity implements CustomAdapter.Ad
     String id;
     String url;
 
-    private ArrayList<PicModel> picList = new ArrayList<>();
+    ArrayList<PicModel> picList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,10 +121,16 @@ public class Main3Activity extends AppCompatActivity implements CustomAdapter.Ad
 //
                     final ArrayList<PicModel> body = (ArrayList) colors.colors;
                     Log.d("test", body.toString());
+                    picList = (ArrayList<PicModel>) body.clone();
+
+
+
 
                 }
             }
+
         });
+
 
 
         rv.setHasFixedSize(true);
@@ -158,6 +164,8 @@ public class Main3Activity extends AppCompatActivity implements CustomAdapter.Ad
                 startActivity(intent);
             }
         });
+
+        mAdapter.notifyDataSetChanged();
 
     }
 

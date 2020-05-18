@@ -1,7 +1,7 @@
 
 1. Marcella Imoisili (mii7)
 
-2. Github link to your app
+2. https://github.com/marcellaimoisili/ColorPic.git
 
 3. The main features of my app include RGB and HSV sliders that allow users to pick unique shades/colors and retrieve cool names that represent them on the web. Ever had a specific color in mind but didn't know what it was called? As humans we're not going to be able to memorize all color hex codes. We don't refer to a specific color by its hex name lol. The problem my app tries to address is the need to find nominal descriptors for specific shades through the use of a color search.  
 
@@ -31,6 +31,8 @@ I stumbled across AppAuth (which looked promising) and tried to follow the steps
 
 
 - I also had some issues understanding and implementing how to pass around the images from dribble into my recycle view holder. However, I think I would have been able to figure it out after retrieving the API data (in the form that I needed) sadly I didn't write the API, which requires user sign on and only returns user shots. I had some placeholder code (in PicModel) where I did my best to anticipate what kinds of types/objects would be retrieved from dribble and then presented using Picasso. I would've probably explored putting this data into a singleton class that would act as a repository for my data before passing it around my app. In the end I just changed pic model to handle the color api json. 
+
+-Picasso and my custom adapter didn't seem to work (for displaying my images) However the console wasn't throwing any errors and everything seemed to run perfectly so it was very tough to debug :/
 
 *Note: On the bright side After Office Hours with Aastha and Justin, I felt a lot better in terms of my understanding of Networking concepts and was able to find The ColorApi would be less of a hassle for the purposes of this final project.
 The only way I could have gotten Dribbble to work in the way I wanted it to would have been by going in to the website directly through url request queries and retrieving it's html (which Justin and I were able to do) and then parsing that information for images :(

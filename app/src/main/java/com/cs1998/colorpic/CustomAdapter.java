@@ -31,7 +31,7 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder>
         this.mAdapterOnClickHandler = ach;
     }
 
-    public static class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public ImageView picIV;
         public TextView closestTV;
         public TextView distanceTV;
@@ -56,7 +56,7 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder>
         View view = (View) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.single_cell, parent, false);
 
-//        Picasso.setSingletonInstance(new Picasso.Builder(this).build());
+        Picasso.setSingletonInstance(new Picasso.Builder(parent.getContext()).build());
 
         CustomViewHolder cvh = new CustomViewHolder(view);
         return cvh;
