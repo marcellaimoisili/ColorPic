@@ -3,7 +3,7 @@
 
 2. https://github.com/marcellaimoisili/ColorPic.git
 
-3. The main features of my app include RGB and HSV sliders that allow users to pick unique shades/colors and retrieve cool names that represent them on the web. Ever had a specific color in mind but didn't know what it was called? As humans we're not going to be able to memorize all color hex codes. We don't refer to a specific color by its hex name lol. The problem my app tries to address is the need to find nominal descriptors for specific shades through the use of a color search.  
+3. The main features of my app include RGB and HSV sliders that allow users to pick unique shades/colors and retrieve cool names that represent them on the web. Ever had a specific color in mind but didn't know what it was called? As humans we're not going to be able to memorize all color hex codes. We don't refer to a specific color by its hex name lol. The problem my app tries to address is the need to find nominal descriptors for specific shades through the use of a color search. In addition I pulled data from the analogically color scheme section of the api I used. This would present users with other colors in this scheme along with their respective names. 
 
 4. I'm most proud of my app's base functionality and the fact that I was able to really learn something tangible from this class and put it to practice! 
 
@@ -32,7 +32,7 @@ I stumbled across AppAuth (which looked promising) and tried to follow the steps
 
 - I also had some issues understanding and implementing how to pass around the images from dribble into my recycle view holder. However, I think I would have been able to figure it out after retrieving the API data (in the form that I needed) sadly I didn't write the API, which requires user sign on and only returns user shots. I had some placeholder code (in PicModel) where I did my best to anticipate what kinds of types/objects would be retrieved from dribble and then presented using Picasso. I would've probably explored putting this data into a singleton class that would act as a repository for my data before passing it around my app. In the end I just changed pic model to handle the color api json. 
 
--Picasso and my custom adapter didn't seem to work (for displaying my images) However the console wasn't throwing any errors and everything seemed to run perfectly so it was very tough to debug :/ This might also be because I didn't properly implement an Async task. I was working on this up to the deadline but have submitted what I currently have.
+-Additionally, Picasso and my Custom Adapter gave me some trouble. They didn't seem to work (for displaying my text and image data) leaving the Search page blank :(. However the console wasn't throwing any errors and everything seemed to run perfectly so it was very tough to debug :/ This might also be because I didn't properly implement an Async task. I was working on this up to the deadline but have submitted what I currently have.
 
 *Note: On the bright side After Office Hours with Aastha and Justin, I felt a lot better in terms of my understanding of Networking concepts and was able to find The ColorApi would be less of a hassle for the purposes of this final project.
 The only way I could have gotten Dribbble to work in the way I wanted it to would have been by going in to the website directly through url request queries and retrieving it's html (which Justin and I were able to do) and then parsing that information for images :(
